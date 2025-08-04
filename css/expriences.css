@@ -1,0 +1,56 @@
+
+body {
+    background: url('../images/bg.jpg') no-repeat center center/cover;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    color: #fff;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 0;
+}
+
+.experiences-section {
+    position: relative;
+    z-index: 1;
+}
+
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: auto;
+}
+
+.skills-list li {
+    font-size: 20px;
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(0,0,0,0.7);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: left;
+}
+
+.skills-list li i {
+    color: #0d6efd;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+
+.skills-list li:hover {
+    background: #0d6efd;
+    color: #fff;
+    transform: translateX(10px);
+}
